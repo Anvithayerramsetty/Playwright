@@ -15,7 +15,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     trace: 'on-first-retry',
-    headless: true,
+   // headless: true,
     storageState: '.auth/user.json',
   },
 
