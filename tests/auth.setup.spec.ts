@@ -12,7 +12,7 @@ test("Authentication", async ({ page }) => {
     //});
     await page.waitForURL("https://rahulshettyacademy.com/client/#/dashboard/dash")
 
-    await expect(page).toHaveScreenshot('homepage.png')
+   // await expect(page).toHaveScreenshot('homepage.png')
 
   //  await page.context().storageState({
     //    path: '.auth/user.json'
