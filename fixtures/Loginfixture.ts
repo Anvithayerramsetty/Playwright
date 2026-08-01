@@ -1,17 +1,17 @@
 import {test as base} from "@playwright/test"
-import {LoginPage} from '../pages/LoginPage'
-import {ProductPage} from "../pages/ProductPage"
+import { Loginpage } from "../Pages/LoginPage"
+import {ProductPage} from "../Pages/ProductPage"
 import { checkAddcartname } from "../pages/CheckoutaddDetailsPage"
 
 type MyFixture={
-    loginPage:LoginPage;
+    loginPage:Loginpage;
     productpage:ProductPage;
     orderprocess:checkAddcartname
 }
 
 export const test=base.extend<MyFixture>({
     loginPage:async({page},use)=>{
-        const login=new LoginPage(page)
+        const login=new Loginpage(page)
         await use(login)
     },
 

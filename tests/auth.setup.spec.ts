@@ -14,9 +14,9 @@ test("Authentication", async ({ page }) => {
 
     await expect(page).toHaveScreenshot('homepage.png')
 
-    await page.context().storageState({
-        path: '.auth/user.json'
+  //  await page.context().storageState({
+    //    path: '.auth/user.json'
 
-    });
+   // });
 
 })

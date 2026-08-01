@@ -16,7 +16,7 @@ export default defineConfig({
 
     trace: 'on-first-retry',
    // headless: true,
-    storageState: '.auth/user.json',
+   // storageState: '.auth/user.json',
   },
 
   /* Configure projects */
